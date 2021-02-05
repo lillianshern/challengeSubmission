@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="message"></div>
+
+
+    <div class="scoreboard">
+        <!-- left part of the scoring board -->
+        <div class="homeScore">
+            <a><b>HOME</b></a>
+
+            <div class="scoresHome">
+                <button onclick="addHome()">+</button>
+                <div class="scoreCount1">0</div>
+                <button onclick="subHome()">-</button>
+            </div>
+
+
+            <div class="playerHome">
+                <a>PLYR NAME</a>
+
+                <div class="penaltycheck">
+                    <button onclick="addPenalty1()">+</button>
+                    <div class="playerNameHome-1"></div>
+                    <button onclick="removePenalty1()">-</button>
+                </div>
+                <div class="penaltycheck">
+                    <button onclick="addPenalty2()">+</button>
+                    <div class="playerNameHome-2"></div>
+                    <button onclick="removePenalty2()">-</button> 
+                </div>
+
+            </div>
+
+        </div>
+        <!-- middle part of the scoring board -->
+        <div class="title">
+            <a>Score Board</a>
+
+            <button onclick="reset()">Reset</button>
+
+            <div class="period">
+                <p>PERIOD</p>
+                <button onclick="subPeriod()"><<</button>
+                <div class="periodCount">1</div>
+                <button onclick="addPeriod()">>></button>
+            </div>
+
+            <div class="penaltystuff">
+                <button onclick="clearPenalty()">Clear</button>
+            </div>
+
+            
+        </div>
+        <!-- left part of the scoring board -->
+        <div class="guestScore">
+            <a><b>GUEST</b></a>
+
+            <div class="scoresHome">
+                <button onclick="addGuest()">+</button>
+                <div class="scoreCount2">0</div>
+                <button onclick="subGuest()">-</button>
+            </div>
+
+            <div class="playerHome">
+                <a>PLYR NAME</a>
+
+                <div class="penaltycheck">
+                    <button onclick="addPenalty3()">+</button>
+                    <div class="playerNameGuest-1"></div>
+                    <button onclick="removePenalty3()">-</button>
+                </div>
+                <div class="penaltycheck">
+                    <button onclick="addPenalty4()">+</button>
+                    <div class="playerNameGuest-2"></div>
+                    <button onclick="removePenalty4()">-</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="challenge3.js"></script>
+
+</body>
+</html>

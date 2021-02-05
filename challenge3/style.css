@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+button {
+    background-color: skyblue; 
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+#message {
+    height: 100px;
+    width: 200px;
+    margin: auto;
+    color: red;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scoreboard {
+    outline: 10px solid white;
+    background-color: rgba(38, 112, 161, 0.76);
+    height: 60vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10vh;
+    margin-left: 20vw;
+    border-radius: 10px;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.title > a {
+    color: white;
+    font-size: 50px;
+}
+.homeScore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40px;
+}
+a {
+    font-size: 40px;
+    color: white;
+    margin-top: 10px;
+}
+.scoreCount1{
+    background-color: black;
+    width: 110px;
+    height: 70px;
+    border-radius: 5px;
+    font-size: 60px;
+    color: red;
+    text-align: center;
+}
+.scoresHome {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+.guestScore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+}
+.scoreCount2{
+    background-color: black;
+    width: 110px;
+    height: 70px;
+    border-radius: 5px;
+    font-size: 60px;
+    text-align: center;
+    color: red;
+}
+.period {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.period > p {
+    color: white;
+}
+.periodCount{
+    display: flex;
+    background-color: black;
+    width: 25px;
+    height: 40px;
+    color: yellow;
+    margin-left: 5px;
+    border-radius: 5px;
+    justify-content: center;
+}
+.periodCount > p{
+    margin-left: 5px;
+}
+.playerHome > a{
+    font-size: 35px;
+}
+.playerNameHome-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 60px;
+    width: 120px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: white;
+    font-size: 25px;
+}
+.playerNameHome-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 60px;
+    width: 120px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: white;
+    font-size: 25px;
+}
+.playerNameGuest-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 60px;
+    width: 120px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: white;
+    font-size: 25px;
+}
+.playerNameGuest-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 60px;
+    width: 120px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: white;
+    font-size: 25px;
+}
+.penaltycheck{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.penaltycheck>button{
+    height: 25px;
+}
+
+.penaltystuff{
+    margin-top: 50px;
+}
