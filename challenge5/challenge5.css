@@ -24,8 +24,7 @@ p{
 .title{
     font-size: 50px;
     color: aliceblue;
-    height: 20vh;
-    width: 100vw;
+    margin: 30px;
     text-align: center;
 }
 .add{
