@@ -24,8 +24,6 @@ function add(){
 
     // clear content
     display.innerHTML = ""
-    
-    // document.write(movieTitle)
     link.forEach(function(element, index){
         var display = document.querySelector(".display")
         display.innerHTML += `<div class="titleDisplay"><center>${title[index]}</center><img src="${element}"></div>`
