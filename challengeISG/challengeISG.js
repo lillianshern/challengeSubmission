@@ -26,6 +26,7 @@ function gameStart() {
     clearTimeout(slowTimer)
     document.querySelector("#one").innerText = "Sociology"
     document.querySelector("#one").style.display = "block"
+    
     document.querySelector("#two").innerText = "Business"
     document.querySelector("#two").style.display = "block"
  }
@@ -34,10 +35,14 @@ function gameStart() {
     document.querySelector("#one").style.display = "none"
     document.querySelector("#two").style.display = "none"
 
+    document.querySelector(".container").style.backgroundImage = "URL('end-homeless.gif')"
+    
+    
     document.getElementById("p1").innerHTML =
         "You were thinking for too long." +
-        "<br><br> Pamela: You still don't know what you are doing with your future? DO YOU THINK THIS IS A JOKE?! That's it, I'm not going to waste my time on you."
+        "<br><br> Pamela: You still don't know what you are doing with your future? DO YOU THINK THIS IS A JOKE?! That's it, I'm not going to waste my time on you. <br><br> You didn't apply to any school that year, and became homeless."
 
+    
     document.querySelector("#start").innerText="Restart"
     document.querySelector("#start").style.display = "block"
     
@@ -55,8 +60,9 @@ function gameStart() {
  }
 
  function two() {
+    document.querySelector(".container").style.backgroundImage = "URL('end-salaryman.gif')"
     document.querySelector("#one").style.display = "none"
-    document.getElementById("p1").innerHTML = "Pamela: *Looks at your transcript* Hmm... YOUR GPA DOES NOT EVEN QUALIFY you to GRADUATE, YOU'LL never get into any universities' department with that GPA."
+    document.getElementById("p1").innerHTML = "Pamela: *Looks at your transcript* Hmm... YOUR GPA DOES NOT EVEN QUALIFY you to GRADUATE, YOU'LL never get into any universities' department with that GPA. You failed her expectation, after highschool, you became a normal salaryman working from 9am to 10pm."
 
 
     document.querySelector("#two").innerText = "Restart"
@@ -64,3 +70,12 @@ function gameStart() {
     document.querySelector("#two").onclick= gameStart
  }
  
+function deadend() {
+    document.getElementById("p1").innerHTML = "You did not listen to Pamela, she decides to kick you out of school. You end up going nowhere and became poor and lonely."
+    document.querySelector(".container").style.backgroundImage = "URL('end-poor.gif')"
+    document.querySelector("#one").style.display = "none"
+    document.querySelector("#two").innerText= "Restart"
+    document.querySelector("#two").style.display= "block"
+    document.querySelector("#two").onclick= gameStart
+
+}
