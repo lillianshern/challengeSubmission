@@ -3,14 +3,12 @@ var happyend = new Audio("SA.mp3")
 var slowTimer
 
 function runTimer (){
-    slowTimer = setTimeout(tooSlow, 8000)
+    slowTimer = setTimeout(tooSlow, 10000)
 }
 
 function gameStart() {
 
     document.querySelector(".container").style.backgroundImage = "URL('home.gif')"
-
-    sadend.pause()
 
     // Start timer
     runTimer()
@@ -22,7 +20,7 @@ function gameStart() {
     
     if (player != null) {
         document.getElementById("p1").innerHTML =
-        "Hi, " + player + ", you're a senior in PAS. It is May, and you're starting to prepare for college applications. " + "Because of COVID, you are going to meet Ms.Pamela, the school principle at home to discuss your major and universities." + 
+        "Hi, " + player + ", you're a senior in PAS. It is May, and you're starting to prepare for college applications. " + "<br><br>Because of COVID, you are going to meet Ms.Pamela, the school's principle, at home to discuss your major and universities." + 
         "<br><br> Pamela: " + "So, " + player + ", what's your intended major?"
     }
 
@@ -50,10 +48,16 @@ function tooSlow() {
 }
 
 function res() {
+
+    document.querySelector(".container").style.backgroundImage = "URL('home.gif')"
+
+    sadend.pause()
+
     // Start timer
     runTimer()
 
     document.querySelector("#start").style.display = "none"
+    document.querySelector("#res").style.display = "none"
 
     document.getElementById("p1").innerHTML = "You've a decided to wait another year to apply. It is May again, and you're starting to prepare for college applications. <br><br> Pamela: " + "So, what's your intended major this time?"
 
@@ -67,6 +71,7 @@ function res() {
 function one() {
     // End timer
     clearTimeout(slowTimer)
+    sadend.pause()
 
     document.getElementById("p1").innerHTML = "Pamela: *Looks at your transcript* Hmm... ok, then you are going to apply these schools."
 
@@ -104,11 +109,26 @@ function deadend() {
 }
 
 function movingon(){
+    document.querySelector("#res").style.display = "block"
+    document.querySelector("#start").style.display = "block"
+
+    sadend.pause()
+
+    document.getElementById("p1").innerHTML = "You listened to Pamela, and today is your decision result release date!!"
+    document.querySelector(".container").style.backgroundImage = "URL('home.gif')"
+    document.querySelector("#one").innerText = "Ask to apply Ivy League"
+    document.querySelector("#one").onclick = deadend
+    document.querySelector("#two").innerText = "Follow Pamela's College List"
+    document.querySelector("#two").onclick = movingon
+
+}
+
+function end(){
 
     happyend.play()
-    
+
     document.getElementById("p1").innerHTML = "You listened to Pamela, and got into a decent school. You became rich and retired early to enjoy life. You opened a little store in downtown Japan."
-    document.querySelector(".container").style.backgroundImage = "URL('successfulretire.gif')"
+    document.querySelector(".container").style.backgroundImage = "URL('happyend.gif')"
     document.querySelector("#one").style.display = "none"
     document.querySelector("#two").style.display = "none"
 }
