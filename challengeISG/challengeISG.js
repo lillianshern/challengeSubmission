@@ -2,7 +2,8 @@ var sadend = new Audio("https://youtu.be/7PtIHBCuR-Q")
 var happyend = new Audio("https://youtu.be/pjDFB5_WfOE")
 
 function gameStart() {
-
+    // Start timer
+    runTimer()
     // hide the start button 
     document.querySelector("#start").style.display = "none"
 
@@ -22,11 +23,6 @@ function gameStart() {
         slowTimer = setTimeout(tooSlow, 8000)
     }
 
-    // Start timer
-    runTimer()
-
-    // End timer
-    clearTimeout(slowTimer)
     document.querySelector("#one").innerText = "Sociology"
     document.querySelector("#one").style.display = "block"
 
@@ -54,6 +50,8 @@ function gameStart() {
  }
 
  function one() {
+    // End timer
+    clearTimeout(slowTimer)
     document.getElementById("p1").innerHTML = "Pamela: *Looks at your transcript* Hmm... ok, then you are going to apply these schools."
 
     document.querySelector("#one").innerText = "Ask to apply Ivy League"
@@ -64,6 +62,8 @@ function gameStart() {
  }
 
  function two() {
+     // End timer
+    clearTimeout(slowTimer)
     sadend.play()
     document.querySelector(".container").style.backgroundImage = "URL('end-salaryman.gif')"
     document.querySelector("#one").style.display = "none"
