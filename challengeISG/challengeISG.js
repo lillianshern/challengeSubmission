@@ -1,3 +1,6 @@
+var sadend = new Audio("https://youtu.be/7PtIHBCuR-Q")
+var happyend = new Audio("https://youtu.be/pjDFB5_WfOE")
+
 function gameStart() {
 
     // hide the start button 
@@ -32,6 +35,7 @@ function gameStart() {
  }
   
  function tooSlow() {
+    sadend.play()
     document.querySelector("#one").style.display = "none"
     document.querySelector("#two").style.display = "none"
 
@@ -60,6 +64,7 @@ function gameStart() {
  }
 
  function two() {
+    sadend.play()
     document.querySelector(".container").style.backgroundImage = "URL('end-salaryman.gif')"
     document.querySelector("#one").style.display = "none"
     document.getElementById("p1").innerHTML = "Pamela: *Looks at your transcript* Hmm... YOUR GPA DOES NOT EVEN QUALIFY you to GRADUATE, YOU'LL never get into any universities' department with that GPA. You failed her expectation, after highschool, you became a normal salaryman working from 9am to 10pm."
@@ -71,6 +76,7 @@ function gameStart() {
  }
  
 function deadend() {
+    sadend.play()
     document.getElementById("p1").innerHTML = "You did not listen to Pamela, she decides to kick you out of school. You end up going nowhere and became poor and lonely."
     document.querySelector(".container").style.backgroundImage = "URL('end-poor.gif')"
     document.querySelector("#one").style.display = "none"
@@ -81,6 +87,7 @@ function deadend() {
 }
 
 function movingon(){
+    happyend()
     document.getElementById("p1").innerHTML = "You listened to Pamela, and got into a decent school. You became rich and retired early to enjoy life. You opened a little store in downtown Japan."
     document.querySelector(".container").style.backgroundImage = "URL('successfulretire.gif')"
 }
