@@ -81,5 +81,6 @@ function deadend() {
 }
 
 function movingon(){
-    document.getElementById("p1").innerHTML = "You listened to Pamela, and got into a decent school. You became a "
+    document.getElementById("p1").innerHTML = "You listened to Pamela, and got into a decent school. You became rich and retired early to enjoy life. You opened a little store in downtown Japan."
+    document.querySelector(".container").style.backgroundImage = "URL('successfulretire.gif')"
 }
