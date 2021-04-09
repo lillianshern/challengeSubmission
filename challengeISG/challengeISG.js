@@ -16,7 +16,7 @@ function gameStart() {
     var slowTimer
     
     function runTimer (){
-        slowTimer = setTimeout(tooSlow, 10000)
+        slowTimer = setTimeout(tooSlow, 8000)
     }
 
     // Start timer
@@ -26,7 +26,7 @@ function gameStart() {
     clearTimeout(slowTimer)
     document.querySelector("#one").innerText = "Sociology"
     document.querySelector("#one").style.display = "block"
-    
+
     document.querySelector("#two").innerText = "Business"
     document.querySelector("#two").style.display = "block"
  }
@@ -78,4 +78,8 @@ function deadend() {
     document.querySelector("#two").style.display= "block"
     document.querySelector("#two").onclick= gameStart
 
+}
+
+function movingon(){
+    document.getElementById("p1").innerHTML = "You listened to Pamela, and got into a decent school. You became a "
 }
