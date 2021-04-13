@@ -61,11 +61,11 @@ function res() {
 
     document.getElementById("p1").innerHTML = "You've a decided to wait another year to apply. It is May again, and you're starting to prepare for college applications. <br><br> Pamela: " + "So, what's your intended major this time?"
 
-    document.querySelector("#p").innerText = "Sociology"
+    document.querySelector("#p").innerText = "What Pam offers"
     document.querySelector("#p").style.display = "block"
     document.querySelector("#p").onclick = p
 
-    document.querySelector("#onep").innerText = "Business"
+    document.querySelector("#onep").innerText = "What you want"
     document.querySelector("#onep").style.display = "block"
     document.querySelector("#onep").onclick = onep
 }
