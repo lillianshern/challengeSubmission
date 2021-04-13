@@ -93,7 +93,7 @@ function onep() {
     document.querySelector(".container").style.backgroundImage = "URL('end-salaryman.gif')"
     document.querySelector("#p").style.display = "none"
     document.querySelector("#onep").style.display = "none"
-    document.getElementById("p1").innerHTML = "Pamela: *Looks at your transcript* Hmm... YOUR GPA DOES NOT EVEN QUALIFY you to GRADUATE, YOU'LL never get into any universities' department with that GPA. You failed her expectation, after highschool, you became a normal salaryman working from 9am to 10pm."
+    document.getElementById("p1").innerHTML = "Pamela: *Looks at your transcript* Hmm... YOUR GPA DOES NOT EVEN QUALIFY you to GRADUATE, YOU'LL never get into any universities' department with that GPA. <br><br>You failed, after highschool, you became a normal salaryman working from 9am to 10pm."
     
     document.querySelector("#res").style.display = "block"
 }
