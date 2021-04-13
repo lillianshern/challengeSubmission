@@ -24,10 +24,10 @@ function gameStart() {
         "<br><br> Pamela: " + "So, " + player + ", what's your intended major?"
     }
 
-    document.querySelector("#p").innerText = "Sociology"
+    document.querySelector("#p").innerText = "Major Consistent with your GPA"
     document.querySelector("#p").style.display = "block"
 
-    document.querySelector("#onep").innerText = "Business"
+    document.querySelector("#onep").innerText = "Major Higher than your GPA"
     document.querySelector("#onep").style.display = "block"
 }
   
