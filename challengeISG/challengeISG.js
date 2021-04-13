@@ -122,7 +122,7 @@ function movingon(){
     document.querySelector("#p").innerText = "Open the decision letter"
     document.querySelector("#p").onclick = end
     document.querySelector("#onep").innerText = "Burn it"
-    document.querySelector("#onep").onclick = deadend
+    document.querySelector("#onep").onclick = burn
 }
 
 function end(){
@@ -131,6 +131,15 @@ function end(){
 
     document.getElementById("p1").innerHTML = "You listened to Pamela, didn't burn your decision letter, and got into a decent school. You became rich and retired early to enjoy life. You opened a little store in downtown Japan."
     document.querySelector(".container").style.backgroundImage = "URL('happyend.gif')"
+    document.querySelector("#p").style.display = "none"
+    document.querySelector("#onep").style.display = "none"
+}
+
+function burn(){
+    sadend.play()
+
+    document.getElementById("p1").innerHTML = "You burned your decision letter, and also your home during the process. You burned all the money you saved, and now you end up living under the bridge."
+    document.querySelector(".container").style.backgroundImage = "URL('burned.gif')"
     document.querySelector("#p").style.display = "none"
     document.querySelector("#onep").style.display = "none"
 }
